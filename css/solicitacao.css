@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.form-container img {
+    display: block;
+    margin: 0 auto 20px;
+    max-width: 150px;
+    height: auto;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #555555;
+    transition: border-color 0.3s;
+}
+
+.form-container input[type="text"]:focus,
+.form-container input[type="number"]:focus,
+.form-container input[type="email"]:focus,
+.form-container input[type="password"]:focus,
+.form-container select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-container input[type="submit"],
+.form-container button[type="button"] {
+    background-color: #09567a;
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.form-container input[type="submit"]:hover,
+.form-container button[type="button"]:hover {
+    background-color: #063950;
+}
+
+.form-container input[type="text"]::placeholder,
+.form-container input[type="number"]::placeholder,
+.form-container input[type="email"]::placeholder,
+.form-container input[type="password"]::placeholder,
+.form-container select::placeholder {
+    color: #999999;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #777777;
+}
+
+div.form-row-cep {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div.form-row-cep div.form-row {
+    margin: 10px;
+}
+
+div.all {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+}
+
+div.form-row-senha {
+    margin: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+footer {
+    background-color: #f3f3f3;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#toggle-password {
+    position: absolute;
+    right: 51.9%;
+    top: 82.7%;
+    transform: translateY(-50);
+}
+
+/* Media queries para tornar o CSS responsivo */
+
+@media screen and (max-width: 600px) {
+    .form-container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .form-container {
+        padding: 10px;
+    }
+    
+    .form-container img {
+        max-width: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form-container {
+      padding: 10px;
+    }
+    
+    .form-container h2 {
+      margin-bottom: 10px;
+    }
+    
+    .form-container input[type="text"],
+    .form-container input[type="number"],
+    .form-container input[type="email"],
+    .form-container input[type="password"],
+    .form-container select {
+      margin-bottom: 5px;
+      padding: 8px 10px;
+    }
+    
+    .form-container input[type="submit"],
+    .form-container button[type="button"] {
+      padding: 10px 20px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .form-container h2 {
+      font-size: 18px;
+    }
+    
+    .form-container input[type="text"],
+    .form-container input[type="number"],
+    .form-container input[type="email"],
+    .form-container input[type="password"],
+    .form-container select {
+      font-size: 12px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .form-container {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    
+    .form-container img {
+      margin-bottom: 10px;
+    }
+    
+    .form-container input[type="submit"],
+    .form-container button[type="button"] {
+      width: 100%;
+    }
+  }
+    

@@ -1,0 +1,45 @@
+FEITO:
+1) Todos os sistemas terão que ter o cadastro do CPF para qualquer usuário. O número do CPF
+deverá ter um valor válido. Se for um valor inexistente, deverá mostrar na tela. FEITO
+
+2) Todos os cadastros deverão ter o endereço residencial. Ao colocar o CEP, automaticamente
+irá preencher os dados da rua, bairro, cidade e uf nos campos. FEITO
+
+3) Os sistemas não deverão deixar executar mais de um cadastro por usuário (CPF) e o login
+deverá ser único FEITO
+
+4) O usuário administrador, deverá cadastrar os demais usuários com um interface web e não
+mais pelo phpmyadmin. FEITO
+
+5) O administrador ao cadastrar um novo usuário, a senha deverá ser exigido a senha forte
+(pelo menos 1 caracter maiúsculo, 1 minúsculo e 1 caracter especial). Exibir o nível da senha
+com uma barra. Cor vermelha para senha fraca, cor amarela para senha intermediária e cor
+verde para senha forte. FEITO
+
+6)  Criar o recuperar a senha e enviar um link para o usuário renovar a senha. FEITO
+
+7) O sistema de controle de pagamentos de funcionários deverá controlar cadastrar, consultar,
+alterar e excluir informações de funcionários pelo responsável de RH (recursos humanos). FEITO
+
+8) Separar funcionários em departamentos. FEITO
+
+9)  O usuário funcionário deverá ter acesso ao sistema
+de apenas consulta para ver o histórico salarial desde quando entrou na empresa até o
+momento atual. FEITO
+
+10) Imprimir contracheque mensal. FEITO
+
+11) Relatório de gasto mensal e anual com funcionários. FEITO
+
+12) Relatório de salários pagos por departamento. FEITO
+
+
+EM ANDAMENTO:
+7) Mostrar a rota(mapa) de onde o usuário se encontra no site e tornar eles com links. EM ANDAMENTO
+
+8)  Criar máquinas virtuais no Virtual Box (pode ser outro aplicativo) para simular: 1 servidor
+DNS, 1 servidor Web(HTTP) e 1 usuário acessando o site. Seu site deverá ter um domínio, por
+exemplo, www.empresa1.com.br. EM ANDAMENTO
+
+9) Mostrar o gráfico: a) média salarial de salários por departamento; b) média salarial anual de
+cada empregado. EM ANDAMENTO

@@ -1,0 +1,272 @@
+/* Css do administrador */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+#header {
+    background-color: #09567a;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+#content {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2 {
+    color: #428bca;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.details-link {
+    color: #428bca;
+    text-decoration: none;
+}
+
+.details-link:hover {
+    text-decoration: underline;
+}
+
+.painel {
+    color: white;
+}
+
+/* Navbar */
+:root {
+    --color-primary: #fff;
+    --color-white: #fff;
+    --color-black: #428bca;
+    --color-black-1: #212b38;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.logo {
+    color: var(--color-white);
+    font-size: 30px;
+}
+
+.logo span {
+    color: var(--color-primary);
+}
+
+.menu-bar {
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+}
+
+.menu-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-bar ul li {
+    padding: 10px 30px;
+    position: relative;
+}
+
+.menu-bar ul li a {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+    color: #212b38;
+}
+
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+    color: white;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+    display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+.dropdown-menu-1 {
+    display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: var(--color-black);
+}
+
+.hero {
+    height: calc(100vh - 80px);
+    background-image: url(./bg.jpg);
+    background-position: center;
+}
+
+.bv {
+    color: white;
+}
+
+.sair {
+    background-color: #d9534f;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    transition: all 0.4s ease-in;
+    cursor: pointer;
+}
+
+.sair:hover {
+    background-color: #CD3333;
+}
+
+/* Css da tabela solicitação */
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #428bca;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    color: #428bca;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #428bca;
+    cursor: pointer;
+}
+
+.btn-info {
+    background-color: #428bca;
+    transition: all 0.3s ease;
+}
+
+.btn-info:hover {
+    background-color: #009ACD;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #CD3333;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .menu-bar {
+        padding: 0 2%;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .menu-bar ul li {
+        padding: 10px;
+    }
+
+    .hero {
+        height: calc(100vh - 120px);
+    }
+
+    .sair {
+        padding: 8px 16px;
+    }
+
+    /* Ajuste do grid do conteúdo */
+    #content {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+}
