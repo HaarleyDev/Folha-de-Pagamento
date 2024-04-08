@@ -31,7 +31,7 @@ Contribuições são sempre bem-vindas! Se você tem uma sugestão para melhorar
 
 ## Licença
 
-Distribuído sob a Licença MIT. Veja \`LICENSE\` para mais informações.
+Distribuído sob a Licença MIT. Veja `LICENSE` para mais informações.
 
 ## Contato
 
